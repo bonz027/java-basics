@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <div>
+        Hello <span id="name"></span>
+    </div>
+    <script>
+        alert('Hello Boulder!');
+        var personName = prompt('Please enter your name', '');
+        if (personName !== null) {
+            console.log('personName', personName)
+            var nameSpan = document.getElementById("name");
+            nameSpan.textContent = personName;
+        }   
+    </script>
+    </body>
+</html>
